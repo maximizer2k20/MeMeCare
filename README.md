@@ -3,12 +3,13 @@ My children love the word MeMe, so I'm using it to create a self care app for ad
 
 MeMeCare is a self-care app (you may also call is a welf(C)are app) focused on emotional healing and personal growth could include features like:
 
-Journaling & Reflection 
+Journaling & Reflection
   – Guided prompts for self-reflection.
-Mindfulness & Meditation 
+
+Mindfulness & Meditation
   – Breathing exercises, guided meditations, and relaxation techniques
-  
-Therapeutic Activities 
+
+Therapeutic Activities
   – Art therapy
   - Music therapy
   - Gratitude practices
