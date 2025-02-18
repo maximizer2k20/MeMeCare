@@ -6,18 +6,24 @@ MeMeCare is a self-care app (you may also call is a welf(C)are app) focused on e
 Journaling & Reflection 
   – Guided prompts for self-reflection.
 Mindfulness & Meditation 
-  – Breathing exercises, guided meditations, and relaxation techniques.
+  – Breathing exercises, guided meditations, and relaxation techniques
+  
 Therapeutic Activities 
   – Art therapy
   - Music therapy
   - Gratitude practices
+
 Emotional Check-ins
   – Mood tracking and suggestions based on emotions.
+
 Personalized Growth Plans
   – Daily/weekly self-care routines.
+
 Community Support
   – Anonymized forums or group support.
+
 AI-powered Coaching
   – Personalized recommendations based on input.
+
 Integration with Health Apps
   – Sync with fitness, sleep, and wellness trackers.
