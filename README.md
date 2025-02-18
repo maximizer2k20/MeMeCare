@@ -15,16 +15,16 @@ Therapeutic Activities
   - Gratitude practices
 
 Emotional Check-ins
-  – Mood tracking and suggestions based on emotions.
+  - Mood tracking and suggestions based on emotional state
 
 Personalized Growth Plans
-  – Daily/weekly self-care routines.
+  - Daily/weekly self-care routines
 
 Community Support
-  – Anonymized forums or group support.
+  - Anonymized forums or group support
 
 AI-powered Coaching
-  – Personalized recommendations based on input.
+  - Personalized recommendations based on input.
 
 Integration with Health Apps
-  – Sync with fitness, sleep, and wellness trackers.
+  - Sync with fitness, sleep, and wellness trackers.
