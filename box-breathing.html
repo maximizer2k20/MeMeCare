@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MeMeCare Box Breathing</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background: #f0f8ff;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #3b3b3b;
+    }
+
+    .controls {
+      margin-bottom: 1.5rem;
+    }
+
+    select, button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin: 0.5rem;
+    }
+
+    .visual-container {
+      width: 220px;
+      height: 220px;
+      margin: 2rem auto;
+      transition: all 4s ease-in-out;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .lung-style {
+      background-image: url('lung-icon.svg');
+    }
+
+    .flower-style {
+      background-image: url('flower-icon.svg');
+    }
+
+    .guide-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>MeMeCare: Box Breathing</h1>
+
+  <div class="controls">
+    <select id="visualType">
+      <option value="lung">Lung Expansion</option>
+      <option value="flower">Flower Bloom</option>
+    </select>
+    <button id="startBtn">Start Breathing</button>
+    <button id="stopBtn">Stop</button>
+  </div>
+
+  <div id="visual" class="visual-container lung-style"></div>
+  <div id="guideText" class="guide-text">Ready?</div>
+
+  <script>
+    const guideText = document.getElementById("guideText");
+    const visual = document.getElementById("visual");
+    const visualType = document.getElementById("visualType");
+    let interval;
+    let phaseIndex = 0;
+
+    const phases = [
+      { label: "Inhale", scale: 1.2, opacity: 1 },
+      { label: "Hold", scale: 1.2, opacity: 1 },
+      { label: "Exhale", scale: 1, opacity: 0.5 },
+      { label: "Hold", scale: 1, opacity: 0.5 }
+    ];
+
+    function updateVisual() {
+      const { label, scale, opacity } = phases[phaseIndex];
+      guideText.textContent = label;
+
+      visual.style.transform = `scale(${scale})`;
+      visual.style.opacity = opacity;
+
+      phaseIndex = (phaseIndex + 1) % phases.length;
+    }
+
+    document.getElementById("startBtn").addEventListener("click", () => {
+      visual.className = `visual-container ${visualType.value}-style`;
+      phaseIndex = 0;
+      updateVisual();
+      interval = setInterval(updateVisual, 4000);
+    });
+
+    document.getElementById("stopBtn").addEventListener("click", () => {
+      clearInterval(interval);
+      guideText.textContent = "Ready?";
+      visual.style.transform = `scale(1)`;
+      visual.style.opacity = 1;
+    });
+  </script>
+</body>
+</html>
